@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Перевірка Колірного Хешування</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2>Генератор Колірного Хешу</h2>
+        <p><b>Тема:</b> Алгоритми хешування та візуалізація даних</p>
+        
+        <div class="task-info">
+            <b>Завдання:</b> Перетворення вхідного тексту у унікальний колірний відбиток (палітру HEX-кольорів) за допомогою побітового алгоритму.
+        </div>
+
+        <div class="inputs">
+            <label for="inputText">Введіть текст для хешування:</label><br>
+            <input type="text" id="inputText" value="Привіт світ!"><br><br>
+
+            <button id="runBtn">Згенерувати хеш</button>
+        </div>
+
+        <h3>Візуальний хеш (Палітра):</h3>
+        <div id="colorBlocks" class="color-container"></div>
+
+        <h3>Результати виконання (Консоль):</h3>
+        <div class="console">
+            <p>Вхідний рядок: "<span id="outString"></span>"</p>
+            <p>HEX-палітра: <span id="outHex"></span></p>
+            <p>Статус: <span id="outStatus">Хеш успішно згенеровано!</span></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
